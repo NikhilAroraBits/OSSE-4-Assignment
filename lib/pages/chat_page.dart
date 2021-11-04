@@ -56,6 +56,22 @@ class _ChatPageState extends State<ChatPage> {
     });
   }
 
+  _sendMessage() {
+    if (messageEditingController.text.isNotEmpty) {
+      Map<String, dynamic> chatMessageMap = {
+        "message": messageEditingController.text,
+        "sender": widget.userName,
+        'time': DateTime.now().millisecondsSinceEpoch,
+      };
+
+      DatabaseService().sendMessage(widget.groupId, chatMessageMap);
+
+      setState(() {
+        messageEditingController.text = "";
+      });
+
+    }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
