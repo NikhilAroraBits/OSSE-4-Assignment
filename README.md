@@ -15,3 +15,9 @@ OSSE assignment-4, BITS cross platform group chat app.
 4. Click get pub get to get the dependencies (considering you have android studio installed)
 5. Start emulator or connect your physical device
 6. Run the app and you are good to go :)
+
+
+# Demo video
+
+https://user-images.githubusercontent.com/92605215/138565427-2ea646b2-e3b7-40fb-8696-c6b64901693d.mp4
+
