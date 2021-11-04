@@ -14,7 +14,14 @@ class GroupTile extends StatelessWidget {
       onTap: (){
         Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage(groupId: groupId, userName: userName, groupName: groupName,)));
       },
-      
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 5.0, vertical: 10.0),
+        child: ListTile(
+          leading: CircleAvatar(
+            radius: 30.0,
+            backgroundColor: Colors.blueAccent,
+            child: Text(groupName.substring(0, 1).toUpperCase(), textAlign: TextAlign.center, style: TextStyle(color: Colors.white)),
+          ),
       ),
     );
   }
