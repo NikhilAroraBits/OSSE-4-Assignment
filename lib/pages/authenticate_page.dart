@@ -19,6 +19,8 @@ class _AuthenticatePageState extends State<AuthenticatePage> {
 
   @override
   Widget build(BuildContext context) {
+    // To Check SignIn 
+    
     if(_showSignIn) {
       return SignInPage(toggleView: _toggleView);
     }
