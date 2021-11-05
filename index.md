@@ -10,11 +10,12 @@
 
 # Steps to run the code.
 1. Take clone of the repo 
-2. Go to cloned folder 
-3. Go to pubspec.yaml 
-4. Click get pub get to get the dependencies (considering you have android studio installed)
-5. Start emulator or connect your physical device
-6. Run the app and you are good to go :)
+1. Go to cloned folder 
+1. Go to pubspec.yaml 
+1. Click get pub get to get the dependencies (considering you have android studio installed)
+1. Start emulator or connect your physical device
+1. Run the app and you are good to go :)
+
 
 # Demo video
 
