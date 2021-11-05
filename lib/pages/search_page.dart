@@ -47,7 +47,6 @@ class _SearchPageState extends State<SearchPage> {
       });
       await DatabaseService().searchByName(searchEditingController.text).then((snapshot) {
         searchResultSnapshot = snapshot;
-        //print("$searchResultSnapshot");
         setState(() {
           isLoading = false;
           hasUserSearched = true;
@@ -161,12 +160,7 @@ class _SearchPageState extends State<SearchPage> {
         backgroundColor: Colors.black87,
         title: Text('Search', style: TextStyle(fontSize: 27.0, fontWeight: FontWeight.bold, color: Colors.white)),
       ),
-      body: // isLoading ? Container(
-      //   child: Center(
-      //     child: CircularProgressIndicator(),
-      //   ),
-      // )
-      // :
+      body:
       Container(
         child: Column(
           children: [
